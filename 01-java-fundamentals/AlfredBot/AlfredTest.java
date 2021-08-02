@@ -4,7 +4,8 @@ public class AlfredTest {
     String testGuestGreeting = alfredBot.guestGreeting("Beth Kane", "evening");
     System.out.println(testGuestGreeting);
 
-
+    String testDateAnnouncement = alfredBot.dateAnnouncement();
+    System.out.println(testDateAnnouncement);
 
 
     }

@@ -1,4 +1,5 @@
 import java.util.Date;
+
 public class AlfredQuotes {
 
     public String guestGreeting(String name, String dayPeriod) {
@@ -6,10 +7,16 @@ public class AlfredQuotes {
         return greeting;
     }
 
-    public String respondBeforeAlexis(String conversation) {
+    public String dateAnnouncement(){
+        Date date = new Date();
+        return "Current date is : " + date;
 
-        return "place holder for snarky response return string";
+
     }
+    // public String respondBeforeAlexis(String conversation) {
+
+    //     return "place holder for snarky response return string";
+    // }
 
 }
 
