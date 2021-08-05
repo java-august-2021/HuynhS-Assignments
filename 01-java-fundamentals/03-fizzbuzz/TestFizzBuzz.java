@@ -13,4 +13,5 @@ public class TestFizzBuzz {
             System.out.println(tester.fizBuzz(i));
         }
     }
+
 }
