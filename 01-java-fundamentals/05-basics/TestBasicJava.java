@@ -31,6 +31,7 @@ public class TestBasicJava {
         for(int i = 0; i < ArrayIteration.size(); i++){
             System.out.println(ArrayIteration.get(i));
         }
+        // System.out.println(javaBasic.ArrayIterating(ArrayIteration));
 
         //Find Max
         ArrayList<Integer> FindMaxArray = new ArrayList<Integer>();
@@ -59,5 +60,37 @@ public class TestBasicJava {
             OddArray.add(i);
         }
         System.out.println(OddArray);
+
+
+        //Get Average
+        ArrayList<Integer> GetAverage = new ArrayList<Integer>();
+
+        for(int i = 0; i <= 7; i++){
+            GetAverage.add(i);
+        }
+        System.out.println(GetAverage);
+        System.out.println(javaBasic.Average(GetAverage));
+
+
+        //Greater Than Y
+        int[] GreaterThanY = {1,3,5,7,};
+        System.out.println(javaBasic.GreaterThan(GreaterThanY,3));
+
+        //Eliminate Negative Numbers
+        ArrayList<Integer> NegativeNumbers = new ArrayList<Integer>();
+        NegativeNumbers.add(1);
+        NegativeNumbers.add(5);
+        NegativeNumbers.add(10);
+        NegativeNumbers.add(-2);
+        NegativeNumbers.add(-10);
+        NegativeNumbers.add(-10);
+        NegativeNumbers.add(-10);
+
+        System.out.println(javaBasic.EliminateNegativeNumbers(NegativeNumbers));
+
+        //Square the values
+        int[] Square = {1,5,10,-2,};
+        System.out.println(javaBasic.SquareTheValues(Square));
     };
+
 }
