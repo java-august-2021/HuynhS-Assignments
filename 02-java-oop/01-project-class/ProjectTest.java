@@ -9,7 +9,7 @@ public class ProjectTest {
         projectOne.setName("yo yo!@");
         System.out.println(projectOne.getName());
 
-        Project projectTwo = new Project("Project two YO!");
+        Project project = new Project("Project two YO!");
         System.out.println(projectTwo.getName());
         projectTwo.setName("Setting a name for Yo project TWO@");
         System.out.println(projectTwo.getName());
