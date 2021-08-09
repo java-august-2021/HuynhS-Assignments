@@ -21,8 +21,12 @@ public class ProjectTest {
         System.out.println(projectThree.getName());
         projectThree.setDescription("Cool cool!");
         System.out.println(projectThree.getDescription());
-
-
-
-    }
+        System.out.println(projectThree.getInitialCost());
+        System.out.println(projectThree.elevatorPitch());
+        // System.out.println(projectThree.setInitialCost());
+        System.out.println(projectThree.elevatorPitch());
+        projectTwo.setDescription("blah");
+        System.out.println(projectTwo.getDescription());
+        projectOne.setInitialCost(10003.3);
+        System.out.println(projectOne.setInitialCost());
 }

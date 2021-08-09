@@ -1,10 +1,10 @@
     //class declaration
-public class Project { 
+public class Project {
     //attributes
     private String name;
     private String description;
-    private double initialCost;
-
+    private double initialCost=3.2;
+    //constructor
     public Project(){
         this.name = "yo!";
     };
@@ -12,13 +12,14 @@ public class Project {
         this.name = name;
     };
 
-    public Project(String name, String description){
+    public Project(String name, String description, double initialCost){
         this.name = name;
         this.description = description;
+        this.initialCost = initialCost;
     }
 
-    public elevatorPitch(String name, String description){
-        return name (cost) + ": " + description;
+    public String elevatorPitch(){
+        return String.format("%s (%02f) %s", name, initialCost, description);
     }
 
     public String getName(){
@@ -30,12 +31,11 @@ public class Project {
     }
 
     public double getInitialCost(){
-        return this.initalCost;
+        return this.initialCost;
     }
 
-    public double setInitialCost(double number){
-        this.initalCost = initialCost;
-    }
+
+
 
     public void setName(String name){
         this.name = name;
@@ -43,6 +43,10 @@ public class Project {
 
     public void setDescription(String description){
         this.description = description;
+    }
+
+    public void setInitialCost(double num){
+        this.initialCost = initialCost;
     }
 
 }
