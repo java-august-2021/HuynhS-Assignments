@@ -1,13 +1,17 @@
 public class Gorilla extends Mammal {
 
-        public String throwSomething(String message, int number){
-            return String.format("%s %d", message, (displayEnergy(number) - number));
-        }
-        public String eatBanana(String message, int number){
-            return String.format("%s %d", message, (displayEnergy(number) + number));
-        }
+    Gorilla(){};
 
-        public String climb(String message, int number){
-            return String.format("%s %d", message, (displayEnergy(number) - number));
-        }
+    public void throwSomething(){
+        System.out.println("Gorilla throw something. Energy level decreases  by 5.");
+        energyLevel -= 5;
+    }
+    public void eatBanana(){
+        System.out.println("Gorilla eats banana. Energy gains by 5.");
+        energyLevel +=5;
+    }
+    public void climb(){
+        System.out.print("Gorilla has climbed. Energy reduces by 10.");
+        energyLevel -=10;
+    }
 }

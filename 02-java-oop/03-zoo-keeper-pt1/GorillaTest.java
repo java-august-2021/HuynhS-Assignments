@@ -1,15 +1,20 @@
 public class GorillaTest {
     public static void main(String[] args) {
-        System.out.println("hello");
-        Gorilla g = new Gorilla();
-        // System.out.println(g.displayEnergy(3));
-        System.out.println(g.throwSomething("Gorilla has thrown something. Energy level is now:", 5));
-        System.out.println(g.throwSomething("Gorilla has thrown something. Energy level is now:", 5));
-        System.out.println(g.throwSomething("Gorilla has thrown something. Energy level is now:", 5));
+        Gorilla g1 = new Gorilla();
 
-        System.out.println(g.eatBanana("Gorilla is satisfied.Energy level is now: ", 10));
-        System.out.println(g.eatBanana("Gorilla is satisfied.Energy level is now: ", 10));
+        g1.throwSomething();
+        g1.displayEnergy();
+        g1.throwSomething();
+        g1.displayEnergy();
+        g1.throwSomething();
+        g1.displayEnergy();
 
-        System.out.println(g.climb("Gorilla has climbed. Energy level is now:", 10));
+        g1.eatBanana();
+        g1.displayEnergy();
+        g1.eatBanana();
+        g1.displayEnergy();
+
+        g1.climb();
+        g1.displayEnergy();
     }
 }
