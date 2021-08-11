@@ -7,8 +7,8 @@ public class Human {
     Human(String name){
         this.name = name;
     }
-    public void attack(Human name){
-        System.out.printf("Inflicted %d damage to %s",this.strength, this.name);
-        health -= strength;
+    public void attack(Human person){
+        System.out.printf("%s inflicted %d damage to %s",this.name, this.strength, person.name);
+        person.health -= this.strength;
     }
 }
