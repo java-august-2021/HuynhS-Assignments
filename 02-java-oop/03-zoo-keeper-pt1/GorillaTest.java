@@ -16,5 +16,6 @@ public class GorillaTest {
 
         g1.climb();
         g1.displayEnergy();
+
     }
 }
