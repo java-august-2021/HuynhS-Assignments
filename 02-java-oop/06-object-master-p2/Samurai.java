@@ -1,8 +1,9 @@
 public class Samurai extends  Human {
-    protected int num = 0;
+    protected static int num = 0;
     protected int health = 200;
     Samurai(String name) {
         super(name);
+        num++;
     }
     public void deathBlow(Human person){
         System.out.printf("%s received a deadly blow from %s. Its health bar is empty. %s is now dead. However, %s's health is reduced by half.", person.name, this.name, person.name, this.name);
@@ -14,8 +15,7 @@ public class Samurai extends  Human {
         this.health += this.health/2;
     }
 
-    public int howMany(){
-        this.num +=1;
-        return this.num;
+    public static int howMany(){
+        return Samurai.num;
     }
 }
