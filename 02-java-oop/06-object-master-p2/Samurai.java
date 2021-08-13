@@ -1,4 +1,5 @@
 public class Samurai extends  Human {
+    protected int num = 0;
     protected int health = 200;
     Samurai(String name) {
         super(name);
@@ -14,6 +15,7 @@ public class Samurai extends  Human {
     }
 
     public int howMany(){
-        return 3;
+        this.num +=1;
+        return this.num;
     }
 }
