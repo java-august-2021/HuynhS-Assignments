@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-import org.graalvm.compiler.core.common.type.ArithmeticOpTable.UnaryOp.Sqrt;
+
 public class BasicJava {
         //Print 1-255
     public int PrintAllNumbers(int number){

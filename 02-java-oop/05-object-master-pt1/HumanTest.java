@@ -3,5 +3,6 @@ public class HumanTest {
         Human h = new Human("Amanda");
         Human h1 = new Human("Johnny");
         h.attack(h1);
+
     }
 }
