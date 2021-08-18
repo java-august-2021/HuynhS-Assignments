@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Hello <c:out value="${ name }"/></h1>
+<h1>Hello <c:out value="${ name }"/> <c:out value="${ lastname }"/></h1>
 <p>Welcome to SpringBoot!</p>
 </body>
 </html>

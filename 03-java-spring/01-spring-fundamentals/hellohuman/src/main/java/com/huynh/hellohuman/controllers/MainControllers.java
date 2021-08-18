@@ -14,9 +14,10 @@ public class MainControllers {
 		return "index.jsp";
 	};
 	
-	@RequestMapping("/{name}")
-	private String personGreeting(@PathVariable("name") String name, Model viewModel) {
+	@RequestMapping("/{name}/{lastname}")
+	private String personGreeting(@PathVariable("name") String name, @PathVariable("lastname") String lastname, Model viewModel) {
 		viewModel.addAttribute("name", name);
+		viewModel.addAttribute("lastname", lastname) ;
 		return "human.jsp";
 	};
 }
