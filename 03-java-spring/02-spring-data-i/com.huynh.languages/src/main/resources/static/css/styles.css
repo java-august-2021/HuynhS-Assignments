@@ -1,0 +1,96 @@
+@charset "ISO-8859-1";
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	text-decoration: none;
+}
+:root {
+	--border: .2rem solid rgba(0,0,0,.1)
+}
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	width: 60%;
+	margin: auto;
+	outline: 1px solid black;
+}
+.languages {
+	font-size: 5rem;
+	display: block;
+	margin: 10vh auto 0 auto;
+	width: 15%;
+	text-align: center;
+}
+
+.add_page:active,
+.add_page:link {
+	color:#3e2723;
+	font-size: 2rem;
+	padding: 1rem;
+	text-transform: uppercase;
+	outline: 1px solid black;
+}
+
+table {
+	font-size: 1.8rem;
+	margin:auto;
+	width: 60%;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+th{
+	padding: 1.5rem;
+	font-size: 2.5rem;
+	width: 25%;
+}
+
+
+td {
+	width: 25%;
+	text-align: center;
+	padding: .8rem;
+}
+
+td:last-child {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+thead, tbody {
+	box-shadow: 0 0 .5rem rgba(0,0,0,.3)
+}
+tr {
+	padding: 3rem;
+	background-color: #6d4c41;
+	color: white;
+}
+.table-input {
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	text-transform: uppercase;
+	background-color: transparent;
+	margin-right: 1rem;
+	font-size: 1.2rem;
+	color: white;
+}
+
+.table-edit:link,
+.table-edit:visited {
+	color: black;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	color:white;
+}
+.table-link {
+	color: white;
+	border-bottom: 1px solid white;
+}
+
