@@ -1,0 +1,125 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap');
+*,
+*::before,
+*::after 
+{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+body
+{
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+.home_page
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	/*background: linear-gradient(-30deg, black 0%, lightblue 50%, skyblue 50%, gray 100%);*/
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: darkgray;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+}
+.form
+{
+	position: relative;
+	padding: 2rem;
+	border: 3px solid gray;
+	/*background: rgba(255, 255, 255, .3);*/
+	border-radius: 10px;
+	box-shadow: 0 .2rem 2rem rgba(255 255 255 / .5);
+	backdrop-filter: blur(30px);
+}
+
+.form_container {
+	flex: 0 0 25%;
+	border: 5px solid darkgray;
+	border-radius: 10px;
+	padding: 2rem;
+	position: relative;
+}
+.form_container:not(:last-child){
+	margin-right: 5rem;
+}
+.register 
+{
+	margin-right: 3rem;
+}
+.form_wrapper
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.form_input 
+{
+	color: darkgray;
+	font-size: 1.2rem;
+	padding: .5rem;
+	border: 0.5px solid gray;
+	border-radius: 5px;
+	border: 1px solid white;
+	outline: none;
+	background-color: lightblue;
+	display: inline-block;
+	margin-bottom: 1.5rem;
+	transition:  transform 500ms;
+	box-shadow: 0 0 1rem rgba(255, 255, 255, .6);
+}
+.form_input::-webkit-input-placeholder {
+	color: darkgray;
+	font-size: 1rem;
+}
+.form_input:focus
+{
+	transform: scale(1.02);
+}
+
+.form_submit
+{
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: 1.5px solid white;
+	border-radius: 5px;
+	cursor:pointer;
+	outline: none;
+	font-weight: bold;
+	font-size: 1.2rem;
+	background-color: lightblue;
+	box-shadow: 0 0 1rem rgba(255, 255, 255, .2);
+	transition: transform box-shadow 500ms;
+}
+.form_submit:hover
+{
+	transform: translate(1px, 1px);
+	box-shadow: .3rem .3rem .6rem rgba(0,0,0,.3);
+}
+
+.form_errors {
+	color: red;
+	position: absolute;
+	top: -1rem;
+	left: .2rem;
+}
+
+.login_errors{
+	position: absolute;
+	color: red;
+	top: 5.2rem;
+	left: 2.2rem;
+}
